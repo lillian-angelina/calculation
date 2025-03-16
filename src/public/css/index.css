@@ -1,0 +1,22 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.container h1{
+    display: flex;
+
+}
+
+table {
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
