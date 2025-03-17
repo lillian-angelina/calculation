@@ -23,9 +23,9 @@
                 <option value="{{ $category->id }}">{{ $category->name }}</option>
             @endforeach
         </select>
+        <input type="text" name="title" placeholder="項目名" required>
         <input type="number" name="amount" placeholder="金額" required>
         <input type="text" name="note" placeholder="備考">
-        <input type="text" name="title" placeholder="項目名" required>
         <button type="submit">追加</button>
     </form>
 </div>

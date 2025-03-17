@@ -1,19 +1,97 @@
 .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
-    height: 100vh;
-    margin: 0 auto;
+    height: auto;
+}
+.grid-item:nth-child(1) { height: 100px; }
+.grid-item:nth-child(2) { height: auto; }
+.grid-item:nth-child(3) { height: 100px; } /* 中身の高さに合わせる */
+
+.content-head {
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 10px;
 }
 
-.container h1{
-    display: flex;
-
+.content-head__1{
+    width: 100%;
+    height: 100%;
 }
 
-table {
-    display: flex;
-    text-decoration: none;
+.content-head__2 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+}
+
+.header__label a {
     width: 100%;
     border-collapse: collapse;
+    margin: 0;
+    font-family: jsMath-cmti10;
+    font-size: 30px;
+    color: #0072f5;
+    text-decoration: none;
+}
+
+.calculation__label {
+    color: rgb(88, 70, 70);
+    margin: 0 485px 0 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.btn-register {
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(225, 0, 255);
+
+}
+
+.new {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.new__space {
+    width: 100%;
+}
+
+.new__space--monthly-weekly{
+    text-align: center;
+}
+
+.monthly {
+
+}
+
+.table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table__second {
+    padding: 10px;
+}
+
+.total {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 th, td {

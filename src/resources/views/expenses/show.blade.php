@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
-@section('title', '家計簿 - 詳細')
-
 @section('content')
 <div class="container">
     <h1>支出・収入の詳細</h1>
