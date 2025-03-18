@@ -1,30 +1,28 @@
 <?php
 
+// database/migrations/xxxx_xx_xx_create_transactions_table.php
+
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
+class CreateTransactionsTable extends Migration
 {
-    /**
-     * Run the migrations.
-     */
-    public function up(): void
+    public function up()
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
-            $table->decimal('amount', 10, 2); // 収支金額
-            $table->enum('type', ['income', 'expense']); // 収入か支出か
-            $table->string('category'); // 収支のカテゴリ
+            $table->string('type'); // 収入 or 支出
+            $table->string('category'); // カテゴリ (例: 食費, 交通費, 給与)
+            $table->integer('amount'); // 金額
+            $table->text('description')->nullable(); // 説明
+            $table->date('date'); // 日付
             $table->timestamps();
-        });        
+        });
     }
 
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
+    public function down()
     {
         Schema::dropIfExists('transactions');
     }
-};
+}

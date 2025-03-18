@@ -6,6 +6,9 @@
     justify-content: center;
     width: 100vw;
     height: auto;
+    background-color: rgba(255, 192, 203, 0.2); /* 0.5は透明度（50%） */
+    width: 70%;
+    margin: 0 15%;
 }
 .grid-item:nth-child(1) { height: 100px; }
 .grid-item:nth-child(2) { height: auto; }
@@ -19,29 +22,14 @@
     padding: 10px;
 }
 
-.content-head__1{
-    width: 100%;
-    height: 100%;
+.monthly {
+    margin-right: 50px;
 }
 
 .content-head__2 {
     width: 100%;
     height: 100%;
     text-align: center;
-}
-
-.header {
-    text-align: center;
-}
-
-.header__label a {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 0;
-    font-family: jsMath-cmti10;
-    font-size: 30px;
-    color: #0072f5;
-    text-decoration: none;
 }
 
 .calculation__label {
@@ -55,7 +43,6 @@
     text-decoration: none;
     padding: 10px;
     color: rgb(225, 0, 255);
-
 }
 
 .new {
@@ -72,10 +59,7 @@
 
 .new__space--monthly-weekly{
     text-align: center;
-}
-
-.monthly {
-
+    font-size: 18px;
 }
 
 .table {
@@ -88,13 +72,34 @@
     padding: 10px;
 }
 
+.table__second--show,
+.table__second--edit {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(36, 28, 148);
+}
+
 .total {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
+    margin-top: 30px;
+}
+
+.total label {
+    border: 1px solid #5a5151;
+    padding: 10px 20px;
+    border-radius: 20px;
 }
 
 th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #5a5151;
+    color: black;
     padding: 8px;
+    font-size: 24px;
+}
+
+.btn {
+    padding: 5px 10px;
+    color: rgb(255, 0, 0);
 }

@@ -13,7 +13,11 @@
 
 </head>
 <body>
-    @yield('header')
+<div class="content-head__1">
+      <header class="header">
+              <label class="header__label"><a href="{{ route('expenses.index') }}">Calculation</a></label>
+        </header>
+</div>
 
     <main>
     @yield('content')

@@ -14,6 +14,26 @@ main {
     padding-bottom: 20px; /* 余白を確保 */
 }
 
+.header__label a {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    font-family: jsMath-cmti10;
+    font-size: 30px;
+    color: #0072f5;
+    text-decoration: none;
+}
+
+.content-head__1{
+    height: 100%;
+    width: 70%;
+    margin: 0 15%;
+}
+
+.header {
+    text-align: center;
+}
+
 @font-face {
     font-family: 'jsMath-cmti10';
     src: url('src/fonts/jsMath-cmti10/jsMath-cmti10.ttf') format('truetype');

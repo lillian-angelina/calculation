@@ -15,5 +15,6 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(CategorySeeder::class);
         $this->call(ExpenseSeeder::class);
+        $this->call(TransactionSeeder::class);
     }
 }
